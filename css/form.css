@@ -1,0 +1,63 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50%;
+    justify-content: center;
+}
+
+#form input,
+#form button,
+#form select,
+#form textarea {
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    background-color: rgb(97, 97, 97);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#form input::placeholder,
+#form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.719);
+}
+
+#form input:focus,
+#form textarea:focus,
+#form select:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#form textarea {
+    height: 300px;
+}
+
+#form #submit {
+    background-color: rgb(43, 93, 201);
+}
+
+#form #submit:hover {
+    background-color: rgb(69, 116, 218);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+    #form input,
+    #form button,
+    #form textarea,
+    #form select {
+        width: 30%;
+    }
+
+    #form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

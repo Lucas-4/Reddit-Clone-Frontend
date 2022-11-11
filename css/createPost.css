@@ -1,0 +1,24 @@
+#form select {
+    margin-bottom: 10px;
+}
+
+.create-post-failed-msg p {
+    color: rgb(243, 69, 69);
+    margin-left: 3px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+#form .create-post-failed {
+    border: 1px solid rgb(243, 69, 69);
+}
+
+@media screen and (min-width: 800px) {
+
+    .create-post-failed-msg {
+        width: 30%;
+        display: flex;
+        align-items: center;
+
+    }
+}

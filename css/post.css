@@ -1,0 +1,144 @@
+.post {
+    background-color: rgb(59, 59, 59);
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.post .title {
+    margin-bottom: 8px;
+}
+
+#order-posts .selected {
+    background-color: rgb(230, 100, 13);
+}
+
+.vote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.post_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#order-posts {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(59, 59, 59);
+    padding: 18px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#order-posts a {
+    padding: 13px;
+    background-color: rgb(99, 99, 99);
+    margin-right: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#order-posts a:hover {
+    background-color: rgb(133, 133, 133);
+    cursor: pointer;
+}
+
+
+.delete_post {
+    margin-left: 10px;
+}
+
+.delete_post:hover {
+    cursor: pointer;
+    color: rgb(248, 43, 43);
+
+}
+
+.edit_post {
+    margin-left: 10px;
+}
+
+.edit_post:hover {
+    color: rgb(47, 67, 241);
+}
+
+.subreddit_name {
+    font-weight: bolder;
+    font-size: 17px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.username {
+    font-size: 14px;
+    color: rgb(216, 216, 216);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.upvoted {
+    color: rgb(245, 80, 39);
+}
+
+.vote i {
+    cursor: pointer;
+}
+
+.bi {
+    font-size: 20px;
+}
+
+.downvoted {
+    color: rgb(49, 156, 214);
+}
+
+#vote_error {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 80px;
+    margin-right: 20px;
+    visibility: hidden;
+    color: aliceblue;
+    background-color: rgb(248, 113, 60);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#vote_error i {
+    margin-right: 5px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    .post,
+    #order-posts {
+        width: 60%;
+    }
+
+    #posts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
